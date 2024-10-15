@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Attendance List</h1>
+        
+        <div id="form">
+            <label for="name">Name: </label><br>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="age">Age: </label><br>
+            <input type="number" id="age" name="age"><br><br>
+
+            <label for="gender">Gender: </label><br>
+            <select name="gender" id="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select><br><br>
+
+            <label for="schoolname">School Name: </label><br>
+            <input type="text" name="schoolname" id="schoolname"><br><br>
+
+            <label for="bestsubject">Best Subject: </label><br>
+            <select name="bestsubject" id="bestsubject">
+                <option value="English">English</option>
+                <option value="Chinese">Chinese</option>
+                <option value="Bahasa Melayu">Bahasa Melayu</option>
+                <option value="Mathematics">Mathematics</option>
+                <option value="Science">Science</option>
+                <option value="History">History</option>
+                <option value="Geography">Geography</option>
+                <option value="Art">Art</option>
+            </select><br><br>
+
+            <button onclick="submitForm()">Submit</button><br><br>
+
+            <label for="namer">Name: </label><br>
+            <input type="text" id="namer" name="namer"><br><br>
+
+            <label for="ager">Age: </label><br>
+            <input type="number" id="ager" name="ager"><br><br>
+
+            <label for="genderr">Gender: </label><br>
+            <select name="genderr" id="genderr">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select><br><br>
+
+            <label for="schoolnamer">School Name: </label><br>
+            <input type="text" name="schoolnamer" id="schoolnamer"><br><br>
+
+            <label for="bestsubjectr">Best Subject: </label><br>
+            <select name="bestsubjectr" id="bestsubjectr">
+                <option value="English">English</option>
+                <option value="Chinese">Chinese</option>
+                <option value="Bahasa Melayu">Bahasa Melayu</option>
+                <option value="Mathematics">Mathematics</option>
+                <option value="Science">Science</option>
+                <option value="History">History</option>
+                <option value="Geography">Geography</option>
+                <option value="Art">Art</option>
+            </select><br><br>
+
+            <label for="relStudent">Name of Student to Replace: </label><br>
+            <input type="text" name="relStudent" id="relStudent"><br><br>
+            <button onclick="replaceStudent()">Replace</button><br><br>
+
+            <label for="delStudent">Name of Student to Delete: </label><br>
+            <input type="text" name="delStudent" id="delStudent"><br><br>
+            <button onclick="deleteStudent()">Delete</button>
+        </div><br><br>
+
+        <ul id="studentlist"></ul>
+
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+body > div {
+    display: flex;
+    padding-bottom: 80px;
+}
+
+button {
+    background-color: white;
+    border: 0;
+    width: 120px;
+    height: 30px;
+}
+
+#a button{
+    background-color: rgb(120, 208, 211);
+    font-family: Cambria;
+}
+
+#a button:hover{
+    background-color: rgb(91, 190, 194);
+}
+
+#b button{
+    background-color: rgb(45, 45, 75);
+    color: whitesmoke;
+    font-family: sans-serif;
+}
+
+#b button:hover{
+    background-color: rgb(255, 145, 0);
+}
+
+#c button{
+    background-color: rgb(182, 243, 147);
+    font-family: "Times New Roman";
+}
+
+#c button:hover{
+    background-color: rgb(138, 221, 100);
+}
+
+#d button{
+    background-color: rgb(230, 176, 124);
+    font-family: "Arial Black";
+}
+
+#d button:hover{
+    background-color: rgb(211, 142, 84);
+}
+
+#e button{
+    background-color: rgb(214, 133, 172);
+    font-family: "Verdana";
+}
+
+#e button:hover{
+    background-color: rgb(216, 51, 161);
+}

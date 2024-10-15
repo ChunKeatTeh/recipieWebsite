@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Form</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="form">
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" autocomplete="name"><br><br>
+                <label for="ageSlider">Age: </label><output id="ageNum"></output><br>
+                <input type="range" id="ageSlider" name="age" max="150" value="50"><br><br>
+                <label for="dateOfBirth">Date of birth:</label><br>
+                <input type="date" id="dateOfBirth" name="dateOfBirth"><br><br>
+                <label for="genderdrop" id="gender" name="gender">Gender:</label><br>
+                <select id="genderdrop" name="gender">
+                    <option value="" name="selectT" disabled selected>Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="none">Neither</option>
+                </select><br><br>
+                <label for="interest">Interest:</label><br>
+                <select name="interest" id="interest">
+                    <option value="" name="selectT" disabled selected>Select</option>
+                    <option value="swim">Swimming</option>
+                    <option value="code">Coding</option>
+                    <option value="badminton">Playing Badminton</option>
+                    <option value="learn">Learning</option>
+                    <option value="cook">Cooking</option>
+                </select><br><br>
+                <label for="school">School:</label><br>
+                <input type="text" id="school" name="school"><br><br>
+                <label for="stemClass">STEM class joined:</label><br>
+                <select id="stemClass" name="stemClass">
+                    <option value="" name="selectT" disabled selected>Select</option>
+                    <option value="thu-8-10">Thursday 8-10pm</option>
+                    <option value="fri-4-6">Friday 4-6pm</option>
+                    <option value="fri_8-10">Friday 8-10pm</option>
+                </select><br><br>
+                <label for="cgpa">CGPA:</label><br>
+                <input type="text" id="cgpa" name="cgpa"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>

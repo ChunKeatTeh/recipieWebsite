@@ -1,0 +1,61 @@
+body {
+    margin: 2cm;
+    background-color: #5FA8D3;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+div.form {
+    padding: 1cm;
+    padding-left: 2cm;
+    padding-right: 2cm;
+    border-radius: 0.5cm;
+    margin: auto;
+    width: fit-content;
+    background-color: #ADDCFF;
+}
+
+select {
+    appearance: input;
+    font-family: 'Roboto Condensed', sans-serif;
+    background: #CAE9FF;
+}
+
+input {
+    appearance: none;
+    border: 0;
+    outline: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    background: #CAE9FF;
+}
+
+input#ageSlider {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 8px;
+    background: white;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+input#ageSlider:hover {
+    opacity: 1;
+}
+
+input#ageSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 17px;
+    height: 17px;
+    border-radius: 100%;
+    background: #5FA8D3;
+    cursor: pointer;
+}
+  
+input#ageSlider::-moz-range-thumb {
+    width: 17px;
+    height: 17px;
+    background: #04AA6D;
+    cursor: pointer;
+}

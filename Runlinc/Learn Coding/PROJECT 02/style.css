@@ -1,0 +1,54 @@
+.center {
+    margin: auto;
+    width: 40%;
+    text-align: center;
+}
+
+.receipt {
+    margin-top: 30px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+#receipttable, #receipttable tr, #receipttable td {
+    border-collapse: collapse;
+}
+
+#receipttable {
+    margin-top: 15px;
+}
+
+#totals {
+    margin-top: 15px;
+}
+
+#left {
+    text-align: left !important;
+}
+
+#right {
+    text-align: right !important;
+}
+
+th {
+    text-align: center;
+}
+
+th, td {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+td {
+    text-align: center;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.buttons {
+    padding: auto !important;
+    padding-top: 30px;
+}

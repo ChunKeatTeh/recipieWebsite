@@ -1,0 +1,51 @@
+<!-- ONLINE ORDERING SYSTEM -->
+
+<html>
+    <head>
+        <title>Online Ordering System</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="center">
+            <h2>Food Ordering System</h2>
+            <table id="menu" align="center">
+                <tr>
+                    <th>Item</th>
+                    <th>Price (RM)</th>
+                    <th>Quantity</th>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="food" id="food">
+                            <option value="Pizza">Pizza</option>
+                            <option value="Burger">Burger</option>
+                            <option value="Salad">Salad</option>
+                            <option value="Sushi">Sushi</option>
+                            <option value="Pasta">Pasta</option>
+                        </select>
+                    </td>
+                    <td id="foodprice">12.99</td>
+                    <td><input type="number" id="quantity" min="0" max="10" value="1"></td>
+                </tr>
+            </table>
+
+            <div class="buttons">
+                <button onclick="createReceiptRow()">Add More</button>
+                <button onclick="calcTotalPrice()">Checkout</button>
+            </div>
+
+            <div class="receipt" style="width: fit-content">
+                <p>[RESTAURANT NAME]</p>
+
+                <p>--------------------------------</p>
+                <table id="daytime" style="width: 100%"></table>
+                <p>--------------------------------</p>
+                
+                <table id="receipttable" align="center" style="width: 100%"></table>
+
+                <table id="totals" align="center" style="width: 100%"></table>
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
