@@ -134,6 +134,10 @@
                             <label for="blackpepper">Black Pepper</label>
                         </div>
                         <div class="ingredient">
+                            <input type="checkbox" id="whitepepper" name="whitepepper" value="whitepepper">
+                            <label for="whitepepper">Wh Pepper</label>
+                        </div>
+                        <div class="ingredient">
                             <input type="checkbox" id="paprika" name="paprika" value="paprika">
                             <label for="paprika">Paprika</label>
                         </div>
@@ -174,6 +178,10 @@
                             <label for="driedparsley">Dried Parsley</label>
                         </div>
                         <div class="ingredient">
+                            <input type="checkbox" id="parsley" name="parsley" value="parsley">
+                            <label for="parsley">Parsley</label>
+                        </div>
+                        <div class="ingredient">
                             <input type="checkbox" id="smokedpaprika" name="smokedpaprika" value="smokedpaprika">
                             <label for="smokedpaprika">Smoked Paprika</label>
                         </div>
@@ -185,40 +193,6 @@
                             <input type="checkbox" id="seasonedsalt" name="seasonedsalt" value="seasonedsalt">
                             <label for="seasonedsalt">Seasoned Salt</label>
                         </div>
-                    </div>
-                </div>
-
-                <button id="ingredient-titleO">Other</button>
-                <div id="ingredients">
-                    <div id="ingredientsO">
-                        <div class="ingredient">
-                            <input type="checkbox" id="vegetableoil" name="vegetableoil" value="vegetableoil">
-                            <label for="vegetableoil">Vegetable Oil</label>
-                        </div>
-                        <div class="ingredient">
-                            <input type="checkbox" id="canolaoil" name="canolaoil" value="canolaoil">
-                            <label for="canolaoil">Canola Oil</label>
-                        </div>
-                        <div class="ingredient">
-                            <input type="checkbox" id="cookingoil" name="cookingoil" value="cookingoil">
-                            <label for="cookingoil">Cooking Oil</label>
-                        </div>
-                        <div class="ingredient">
-                            <input type="checkbox" id="tallow" name="tallow" value="tallow">
-                            <label for="tallow">Tallow</label>
-                        </div>
-                        <div class="ingredient">
-                            <input type="checkbox" id="lemonjuice" name="lemonjuice" value="lemonjuice">
-                            <label for="lemonjuice">Lemon Juice</label>
-                        </div>
-                        <div class="ingredient">
-                            <input type="checkbox" id="sweetchilisauce" name="sweetchilisauce" value="sweetchilisauce">
-                            <label for="sweetchilisauce">Sweet Chili Sauce</label>
-                        </div>
-                        <div class="ingredient">
-                            <input type="checkbox" id="ricevinegar" name="ricevinegar" value="ricevinegar">
-                            <label for="ricevinegar">Rice Vinegar</label>
-                        </div>
                         <div class="ingredient">
                             <input type="checkbox" id="hotsauce" name="hotsauce" value="hotsauce">
                             <label for="hotsauce">Hot Sauce</label>
@@ -228,16 +202,12 @@
                             <label for="franksredhotpeppersauce">Franks Red Hot Pepper Sauce</label>
                         </div>
                         <div class="ingredient">
-                            <input type="checkbox" id="whitevinegar" name="whitevinegar" value="whitevinegar">
-                            <label for="whitevinegar">White Vinegar</label>
-                        </div>
-                        <div class="ingredient">
-                            <input type="checkbox" id="worcestershiresauce" name="worcestershiresauce" value="worcestershiresauce">
-                            <label for="worcestershiresauce">Worcestershire Sauce</label>
-                        </div>
-                        <div class="ingredient">
                             <input type="checkbox" id="koshersalt" name="koshersalt" value="koshersalt">
                             <label for="koshersalt">Kosher Salt</label>
+                        </div>
+                        <div class="ingredient">
+                            <input type="checkbox" id="flakedsalt" name="flakedsalt" value="flakedsalt">
+                            <label for="flakedsalt">Flaked Salt</label>
                         </div>
                         <div class="ingredient">
                             <input type="checkbox" id="brownsugar" name="brownsugar" value="brownsugar">
@@ -248,20 +218,74 @@
                             <label for="whitesugar">White Sugar</label>
                         </div>
                         <div class="ingredient">
-                            <input type="checkbox" id="honey" name="honey" value="honey">
-                            <label for="honey">Honey</label>
-                        </div>
-                        <div class="ingredient">
-                            <input type="checkbox" id="msg" name="msg" value="msg">
-                            <label for="msg">MSG</label>
-                        </div>
-                        <div class="ingredient">
                             <input type="checkbox" id="bakingpowder" name="bakingpowder" value="bakingpowder">
                             <label for="bakingpowder">Baking Powder</label>
                         </div>
                         <div class="ingredient">
                             <input type="checkbox" id="honeybbqsauce" name="honeybbqsauce" value="honeybbqsauce">
                             <label for="honeybbqsauce">Honey BBQ Sauce</label>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="ingredient-titleO">Other</button>
+                <div id="ingredients">
+                    <div id="ingredientsO">
+                        <div class="ingredient">
+                            <input type="checkbox" id="honey" name="honey" value="honey">
+                            <label for="honey">Honey</label>
+                        </div>
+                        <div class="ingredient">
+                            <input type="checkbox" id="molasses" name="molasses" value="molasses">
+                            <label for="molasses">Molasses</label>
+                        </div>
+                        <div class="ingredient">
+                            <input type="checkbox" id="butter" name="butter" value="butter">
+                            <lafbel for="butter">Butter</lafbel>
+                        </div>
+                        <div class="ingredient">
+                            <input type="checkbox" id="marinarasauce" name="marinarasauce" value="marinarasauce">
+                            <label for="marinarasauce">Marinara Sauce</label>
+                        </div>
+                        <div class="ingredient">
+                            <input type="checkbox" id="aioli" name="aioli" value="aioli">
+                            <label for="aioli">Aioli</label>
+                        </div>
+                        <div class="ingredient">
+                            <input type="checkbox" id="ketchup" name="ketchup" value="ketchup">
+                            <label for="ketchup">Ketchup</label>
+                        </div>
+                        <div class="ingredient">
+                            <input type="checkbox" id="horseradish" name="horseradish" value="horseradish">
+                            <label for="horseradish">Horseradish</label>
+                        </div>
+                        <div class="ingredient">
+                            <input type="checkbox" id="garlic" name="garlic" value="garlic">
+                            <label for="garlic">Garlic</label>
+                        </div>
+                        <div class="ingredient">
+                            <input type="checkbox" id="oliveoil" name="oliveoil" value="oliveoil">
+                            <label for="oliveoil">Olive Oil</label>
+                        </div>
+                        <div class="ingredient">
+                            <input type="checkbox" id="tallow" name="tallow" value="tallow">
+                            <label for="tallow">Tallow</label>
+                        </div>
+                        <div class="ingredient">
+                            <input type="checkbox" id="lemonjuice" name="lemonjuice" value="lemonjuice">
+                            <label for="lemonjuice">Lemon Juice</label>
+                        </div>
+                        <div class="ingredient">
+                            <input type="checkbox" id="oil" name="oil" value="oil">
+                            <label for="oil">Oil</label>
+                        </div>
+                        <div class="ingredient">
+                            <input type="checkbox" id="whitevinegar" name="whitevinegar" value="whitevinegar">
+                            <label for="whitevinegar">White Vinegar</label>
+                        </div>
+                        <div class="ingredient">
+                            <input type="checkbox" id="worcestershiresauce" name="worcestershiresauce" value="worcestershiresauce">
+                            <label for="worcestershiresauce">Worcestershire Sauce</label>
                         </div>
                         <div class="ingredient">
                             <input type="checkbox" id="lemonwedges" name="lemonwedges" value="lemonwedges">
