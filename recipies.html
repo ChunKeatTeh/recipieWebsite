@@ -10,12 +10,12 @@
             <a href="#about">About</a>
         </div>
 
-        <div id="body">
+        <div class="body">
             <h1>Recipies</h1>
             <h2>Ingredients you have:</h2>
-            <div id="ingredient-cat">
+            <div class="ingredient-cat">
                 <button id="ingredient-titleM">Meat</button>
-                <div id="ingredients">
+                <div class="ingredients">
                     <div id="ingredientsM">
                         <div class="ingredient">
                             <input type="checkbox" id="chickenbreast" name="chickenbreast" value="chickenbreast">
@@ -53,7 +53,7 @@
                 </div>
 
                 <button id="ingredient-titleV">Vegetables</button>
-                <div id="ingredients">
+                <div class="ingredients">
                     <div id="ingredientsV">
                         <div class="ingredient">
                             <input type="checkbox" id="onions" name="onions" value="onions">
@@ -75,7 +75,7 @@
                 </div>
 
                 <button id="ingredient-titleDE">Dairy & Eggs</button>
-                <div id="ingredients">
+                <div class="ingredients">
                     <div id="ingredientsDE">
                         <div class="ingredient">
                             <input type="checkbox" id="eggs" name="eggs" value="eggs">
@@ -101,7 +101,7 @@
                 </div>
 
                 <button id="ingredient-titleGS">Grains & Starches</button>
-                <div id="ingredients">
+                <div class="ingredients">
                     <div id="ingredientsGS">
                         <div class="ingredient">
                             <input type="checkbox" id="flour" name="flour" value="flour">
@@ -119,11 +119,15 @@
                 </div>
 
                 <button id="ingredient-titleSS">Seasonings & Spices</button>
-                <div id="ingredients">
+                <div class="ingredients">
                     <div id="ingredientsSS">
                         <div class="ingredient">
                             <input type="checkbox" id="salt" name="salt" value="salt">
                             <label for="salt">Salt</label>
+                        </div>
+                        <div class="ingredients">
+                            <input type="checkbox" id="seasonedsalt" name="seasonedsalt" value="seasonedsalt">
+                            <label for="seasonedsalt">Seasoned Salt</label>
                         </div>
                         <div class="ingredient">
                             <input type="checkbox" id="pepper" name="pepper" value="pepper">
@@ -229,7 +233,7 @@
                 </div>
 
                 <button id="ingredient-titleO">Other</button>
-                <div id="ingredients">
+                <div class="ingredients">
                     <div id="ingredientsO">
                         <div class="ingredient">
                             <input type="checkbox" id="honey" name="honey" value="honey">
@@ -294,6 +298,34 @@
                     </div>
                 </div>
             </div>
+            <div class="recipies">
+                <div class="recipie" id="buttermilkchickentenders">
+                    <h2>Buttermilk Chicken Tenders</h2>
+                    <p>Ingredients:</p>
+                    <ul>
+                        <li>1 lb boneless, skinless chicken breast</li>
+                        <li>1.5 cups all-purpose flour</li>
+                        <li>2 eggs</li>
+                        <li>1 cup buttermilk</li>
+                        <li>1 tbsp seasoned salt</li>
+                        <li>1 tbsp paprika</li>
+                        <li>1 tbs parsley flakes, dried</li>
+                        <li>2 cups vegetable oil</li>
+                    </ul>
+
+                    <p>Instructions:</p>
+                    <ol>
+                        <li>Place chicken breasts in between 2 pieces of plastic wrap and pound to even thickness of about about ½″. Then cut into strips of about an inch thick. Place in a bowl with buttermilk and let sit in refrigerator, covered for about an hour.</li>
+                        <li>In a large bowl, combine flour, seasoned salt, paprika and parsley flakes. In another bowl, beat two eggs.</li>
+                        <li>In a deep frying pan, heat oil to about 350°(F) (medium heat for about 5 minutes).</li>
+                        <li>Remove chicken strips from buttermilk. One at a time dredge the strips in flour mix and shake off excess. Then dunk into beaten eggs and let excess drip off; then back through the flour. Set aside on a paper plate until complete.</li>
+                        <li>Carefully place the coated chicken tenders into the pan with hot oil. Fry for about 3-4 minutes, then flip pieces over for another 3 minutes or until golden brown. Internal temp should be 165 degrees F on an instant-read thermometer.</li>
+                        <li>Carefully remove chicken from oil and drain on paper towels.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <button onclick="test()">Test</button>
         </div>
 
         <script src="script.js"></script>

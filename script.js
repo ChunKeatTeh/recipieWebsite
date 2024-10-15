@@ -13,27 +13,27 @@ const seasoningsspicesIngredients = document.getElementById("ingredientsSS");
 const otherIngredients = document.getElementById("ingredientsO");
 
 meatButton.addEventListener("click", () => {
-    meatIngredients.classList.toggle("show");
+    meatIngredients.classList.toggle("showB");
 });
 
 vegetablesButton.addEventListener("click", () => {
-    vegetableIngredients.classList.toggle("show");
+    vegetableIngredients.classList.toggle("showB");
 });
 
 dairyeggsButton.addEventListener("click", () => {
-    dairyeggsIngredients.classList.toggle("show");
+    dairyeggsIngredients.classList.toggle("showB");
 });
 
 grainsstarchesButton.addEventListener("click", () => {
-    grainsstarchesIngredients.classList.toggle("show");
+    grainsstarchesIngredients.classList.toggle("showB");
 });
 
 seasoningsspicesButton.addEventListener("click", () => {
-    seasoningsspicesIngredients.classList.toggle("show");
+    seasoningsspicesIngredients.classList.toggle("showB");
 });
 
 otherButton.addEventListener("click", () => {
-    otherIngredients.classList.toggle("show");
+    otherIngredients.classList.toggle("showB");
 });
 
 let availableIngredients = { ...dictionary, 
@@ -62,6 +62,7 @@ let availableIngredients = { ...dictionary,
     breadcrumbs: document.getElementById("breadcrumbs").checked,
 
     salt: document.getElementById("salt").checked,
+    seasonedsalt: document.getElementById("seasonedsalt").checked,
     pepper: document.getElementById("pepper").checked,
     blackpepper: document.getElementById("blackpepper").checked,
     whitepepper: document.getElementById("whitepepper").checked,
@@ -106,10 +107,9 @@ let availableIngredients = { ...dictionary,
 };
 
 class Recipie {
-    constructor(element, ingredients, instructions) {
+    constructor(element, ingredients) {
         this.element = element;
         this.ingredients = ingredients;
-        this.instructions = instructions;
     }
 
     checkShow(ingredient) { return ingredient; }
@@ -118,12 +118,23 @@ class Recipie {
         for (var i = 0; i < this.ingredients.length; i++) {
             if (availableIngredients.this.ingredients[i] == false) {
                 this.element.classList.remove("showIngredient");
+                alert("no show");
                 break;
             }
         }
 
         if (this.ingredients.every(this.checkShow)) {
             this.element.classList.add("showIngredient");
+            alert("show");
         }
+
+        alert("go through");
     }
 }
+
+function test() {
+    alert("test");
+    ButtermilkChickenTenders.showRecipie();
+}
+
+const ButtermilkChickenTenders = new Recipie(document.getElementById("buttermilkchickentenders"), [chickenbreast, flour, eggs, buttermilk, seasonedsalt, paprika, parsleyflakes, oil]);

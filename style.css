@@ -28,11 +28,11 @@ body {
     color: white;
 }
 
-#body {
+.body {
     margin: 8px;
 }
 
-#ingredient-cat button {
+.ingredient-cat button {
     background: none;
     border: none;
     margin: 16px 0 0;
@@ -41,7 +41,7 @@ body {
     font-family: Georgia;
 }
 
-#ingredients {
+.ingredients {
     overflow: hidden;
 }
 
@@ -54,7 +54,7 @@ body {
     overflow: hidden;
 }
 
-#ingredientsM.show, #ingredientsV.show, #ingredientsDE.show, #ingredientsGS.show, #ingredientsSS.show, #ingredientsO.show {
+#ingredientsM.showB, #ingredientsV.showB, #ingredientsDE.showB, #ingredientsGS.showB, #ingredientsSS.showB, #ingredientsO.showB {
     display: block;
     height: auto;
     transform: translateY(0%);
