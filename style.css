@@ -1,0 +1,67 @@
+body {
+    font-family: "Georgia";
+    margin: 0;
+}
+
+.nav {
+    background-color: #253031;
+    overflow: hidden;
+    display: flex;
+}
+
+.nav a{
+    float: left;
+    color: #F2FBE0;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav a:hover {
+    background-color: #315659;
+    color: white;
+}
+
+.topnav a.active {
+    background-color: #FC9F5B;
+    color: white;
+}
+
+#body {
+    margin: 8px;
+}
+
+#ingredient-cat button {
+    background: none;
+    border: none;
+    margin: 16px 0 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: Georgia;
+}
+
+#ingredients {
+    overflow: hidden;
+}
+
+#ingredientsM, #ingredientsV, #ingredientsDE, #ingredientsGS, #ingredientsSS, #ingredientsO {
+    display: none;
+    height: 0;
+    transition: transform 0.5s, display 0.5s, height 1s;
+    transition-behavior: allow-discrete;
+    transform: translateY(-100%);
+    overflow: hidden;
+}
+
+#ingredientsM.show, #ingredientsV.show, #ingredientsDE.show, #ingredientsGS.show, #ingredientsSS.show, #ingredientsO.show {
+    display: block;
+    height: auto;
+    transform: translateY(0%);
+
+    @starting-style {
+        transform: translateY(-100%);
+        height: auto;
+    }
+}
+
