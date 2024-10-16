@@ -1,5 +1,5 @@
 body {
-    font-family: "Georgia";
+    font-family: "Rockwell";
     margin: 0;
 }
 
@@ -41,6 +41,14 @@ body {
     font-family: Georgia;
 }
 
+#updateRecipies {
+    background-color: #315659;
+    color: white;
+    padding: 5px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
 .ingredients {
     overflow: hidden;
 }
@@ -65,3 +73,30 @@ body {
     }
 }
 
+.recipies > div {
+    margin: 1em;
+    border: 2px solid #253031;
+    border-radius: 2em;
+    overflow: hidden;
+}
+
+.recipies > div h2 {
+    background-color: #F2FBE0;
+    padding: 0.83em 1em;
+    margin-top: 0;
+    border-bottom: 1px solid #253031;
+}
+
+.recipies > div p {
+    padding: 0 1em;
+    margin-bottom: 0;
+}
+
+.recipies > div ul, .recipies > div ol {
+    padding: 0 2em;
+    margin-top: 0;
+}
+
+.recipies > div.showIngredient {
+    display: none;
+}

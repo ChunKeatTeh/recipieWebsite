@@ -36,7 +36,7 @@ otherButton.addEventListener("click", () => {
     otherIngredients.classList.toggle("showB");
 });
 
-let availableIngredients = { ...dictionary, 
+let availableIngredients = { 
     chickenbreast: document.getElementById("chickenbreast").checked,
     crispychickenstrips: document.getElementById("crispychickenstrips").checked,
     chicken: document.getElementById("chicken").checked,
@@ -90,7 +90,6 @@ let availableIngredients = { ...dictionary,
 
     honey: document.getElementById("honey").checked,
     molasses: document.getElementById("molasses").checked,
-    cookingoil: document.getElementById("cookingoil").checked,
     butter: document.getElementById("butter").checked,
     marinarasauce: document.getElementById("marinarasauce").checked,
     aioli: document.getElementById("aioli").checked,
@@ -115,26 +114,23 @@ class Recipie {
     checkShow(ingredient) { return ingredient; }
 
     showRecipie() {
+        alert("go through");
+
         for (var i = 0; i < this.ingredients.length; i++) {
             if (availableIngredients.this.ingredients[i] == false) {
                 this.element.classList.remove("showIngredient");
-                alert("no show");
                 break;
             }
         }
 
         if (this.ingredients.every(this.checkShow)) {
             this.element.classList.add("showIngredient");
-            alert("show");
         }
-
-        alert("go through");
     }
 }
 
-function test() {
-    alert("test");
-    ButtermilkChickenTenders.showRecipie();
-}
-
 const ButtermilkChickenTenders = new Recipie(document.getElementById("buttermilkchickentenders"), [chickenbreast, flour, eggs, buttermilk, seasonedsalt, paprika, parsleyflakes, oil]);
+
+function updateReicipies() {
+    
+}
