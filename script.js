@@ -114,8 +114,6 @@ class Recipie {
     checkShow(ingredient) { return ingredient; }
 
     showRecipie() {
-        alert("go through");
-
         for (var i = 0; i < this.ingredients.length; i++) {
             if (availableIngredients.this.ingredients[i] == false) {
                 this.element.classList.remove("showIngredient");
