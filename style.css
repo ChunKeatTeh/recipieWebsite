@@ -1,5 +1,5 @@
 body {
-    font-family: "Rockwell";
+    font-family: "Nunito";
     margin: 0;
 }
 
@@ -38,7 +38,7 @@ body {
     margin: 16px 0 0;
     padding: 0;
     font-size: 18px;
-    font-family: Georgia;
+    font-family: "Nunito";
 }
 
 #updateRecipies {
@@ -56,7 +56,7 @@ body {
 #ingredientsM, #ingredientsV, #ingredientsDE, #ingredientsGS, #ingredientsSS, #ingredientsO {
     display: none;
     height: 0;
-    transition: transform 0.5s, display 0.5s, height 1s;
+    transition: transform 1s, display 0.5s, height 1s;
     transition-behavior: allow-discrete;
     transform: translateY(-100%);
     overflow: hidden;
