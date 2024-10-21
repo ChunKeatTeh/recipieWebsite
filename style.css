@@ -78,6 +78,7 @@ body {
     border: 2px solid #253031;
     border-radius: 2em;
     overflow: hidden;
+    display: none;
 }
 
 .recipies > div h2 {
@@ -98,5 +99,5 @@ body {
 }
 
 .recipies > div.showIngredient {
-    display: none;
+    display: block;
 }
